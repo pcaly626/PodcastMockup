@@ -81,6 +81,42 @@ body {
     float:left;
 }
 
+ul.navbar-list li.drop-down-icon {
+	display:none;
+}
+
+@media screen and (max-width: 680px){
+	ul.navbar-list li:not(:nth-child(1)){
+		display:none;
+	}
+
+	ul.navbar-list li.drop-down-icon {
+		display:block;
+		float:right;
+	}
+
+	ul.navbar-list.responsive li.drop-down-icon {
+		position:absolute;
+		top: 0;
+		right:0;
+	}
+
+	ul.navbar-list.responsive {
+		position: relative;
+	}
+
+	ul.navbar-list.responsive li {
+		display: inline;
+		float:none;
+	}
+
+	ul.navbar-list.responsive li a {
+		display:block;
+		text-align: left;
+	}
+
+
+}
 
 .home {
 	background: url("pictures/mario_luigi_art_1.png");
