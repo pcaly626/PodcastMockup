@@ -1,4 +1,4 @@
-const soundcloud = require('soundcloud');
+var soundcloud = require('soundcloud');
 
 function dropDownMenu(){
 	let click = document.getElementById("drop-down-menu");
